@@ -213,7 +213,7 @@ download_file() {
     return 0
   fi
 
-  wget -q --show-progress "$file_url" -O "$local_file"
+  wget2 -v --force-progress "$file_url" -O "$local_file"
 }
 
 extract_file() {
